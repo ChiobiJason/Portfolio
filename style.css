@@ -73,6 +73,42 @@
   word-spacing: 3px;
 }
 
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills-header {
+  background: black;
+  color: white;
+  margin: 20px 0;
+  padding: 10px 30px;
+}
+
+.skill-container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.skill {
+  display: flex;
+  height: 10rem;
+  width: 20rem;
+  margin: 10px 20px;
+}
+
+.skill-black {
+  background: black;
+  width: 50%;
+}
+
+.skill-blue {
+  background: #6cd3f4;
+  width: 50%;
+}
+
 /* Media query */
 @media only screen and (min-width: 1200px) {
   #hero-greeting {
@@ -95,5 +131,12 @@
     padding: 0 10px;
     letter-spacing: 0;
     word-spacing: 0;
+  }
+}
+
+@media only screen and (max-width: 1052px) {
+  .skill-container {
+    flex-direction: column;
+    margin-bottom: 0;
   }
 }
