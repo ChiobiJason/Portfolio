@@ -40,11 +40,60 @@
   padding: 10px;
 }
 
+#about {
+  display: flex;
+  height: 20rem;
+}
+
+.about-header,
+.about-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-header {
+  background: #171817;
+  text-align: center;
+}
+
+.about-header > h2 {
+  color: #6cd3f4;
+  padding: 0 30px;
+}
+
+.about-info {
+  background: #1e221d;
+}
+
+.about-info > p {
+  color: white;
+  padding: 0 20px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+/* Media query */
 @media only screen and (min-width: 1200px) {
   #hero-greeting {
     margin: 0 0 10px 120px;
   }
   #hero-job {
     margin: 0 0 10px 70px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #hero-job {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-info > p {
+    color: white;
+    padding: 0 10px;
+    letter-spacing: 0;
+    word-spacing: 0;
   }
 }
