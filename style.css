@@ -144,28 +144,34 @@
   align-items: center;
 }
 
-#image-container {
+.image-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  /* background-color: #000000; */
+  max-width: 80%;
 }
 
-#image-container > img {
+.image-container > img {
   width: 50%;
 }
 
-#image-container > .pic-1 {
+.image-container > .pic-1 {
   position: relative;
   z-index: 1;
 }
 
-#image-container > .pic-2 {
+.image-container > .pic-2 {
   position: relative;
+  transform: translate(50%, -50%);
+  z-index: 0;
+  /* margin-bottom: -100px; */
+  /* position: relative;
   left: 150px;
   top: -100px;
   z-index: 0;
-  margin-bottom: -90px;
+  margin-bottom: -90px; */
 }
 
 #mfm-project > h3 {
